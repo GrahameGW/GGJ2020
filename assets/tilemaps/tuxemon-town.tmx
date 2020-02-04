@@ -876,12 +876,12 @@
    </properties>
    <point/>
   </object>
-  <object id="313" type="room" x="415.055" y="479.234" width="480.005" height="255.025">
+  <object id="313" type="room" x="415.055" y="479.234" width="480.005" height="255.025" visible="0">
    <properties>
     <property name="name" value="middle"/>
    </properties>
   </object>
-  <object id="314" type="room" x="545.004" y="864.253" width="221.597" height="157.404">
+  <object id="314" type="room" x="545.004" y="864.253" width="221.597" height="157.404" visible="0">
    <properties>
     <property name="name" value="entry"/>
    </properties>
