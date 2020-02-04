@@ -42,7 +42,7 @@ export default class World {
       stroke: '#FFFFFF'
     };
 
-    this.playTrack('Victory Music 4')
+    this.playTrack('Victory_Music_4')
 
     var text = this.p3.add
                     .text(200, 250, 'Level Cleared', style)
@@ -69,7 +69,7 @@ export default class World {
       stroke: '#000000'
     };
 
-    this.playTrack('Defeat Music')
+    this.playTrack('Defeat_Music')
 
     this.p3.add
         .text(250, 250, 'Game Over', style)
@@ -96,8 +96,8 @@ export default class World {
   }
 
   loadAssets(p3) {
-    p3.load.image("tiles", "../assets/tilesets/32_dungeon_tiles.png");
-    p3.load.tilemapTiledJSON("map", "../assets/tilemaps/intro-compressed.json");
+    p3.load.image("tiles", "/assets/tilesets/32_dungeon_tiles.png");
+    p3.load.tilemapTiledJSON("map", "/assets/tilemaps/intro-compressed.json");
 
     // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
     // the player animations (walking left, walking right, etc.) in one image. For more info see:
@@ -107,8 +107,8 @@ export default class World {
     //p3.load.multiatlas("atlas", "../assets/atlas/full_atlas.json", "../assets/atlas/sprites",);
     p3.load.atlas({
       key: 'atlas',
-      textureURL: '../assets/atlas/full_atlas.png',
-      atlasURL: '../assets/atlas/full_atlas.json'
+      textureURL: '/assets/atlas/full_atlas.png',
+      atlasURL: '/assets/atlas/full_atlas.json'
     });
 
     let sounds = [
@@ -119,7 +119,7 @@ export default class World {
     ];
 
     sounds.forEach((sound) => {
-      p3.load.audio(sound, '../assets/sounds/effects/'+sound+'.mp3');
+      p3.load.audio(sound, '/assets/sounds/effects/'+sound+'.mp3');
       this.sounds[sound] = null;
     });
 
@@ -130,7 +130,7 @@ export default class World {
     ]
 
     music.forEach((track) => {
-      p3.load.audio(track, '../assets/sounds/music/'+track+'.mp3');
+      p3.load.audio(track, '/assets/sounds/music/'+ track +'.mp3');
       this.music[track] = null;
     });
   }
@@ -321,7 +321,7 @@ export default class World {
 
   worldReady(p3) {
     this.heroTime = this.configuration.heroRules.baseHeroTimer;
-    this.playTrack('Music TR 3');
+    this.playTrack('Music_TR_3');
 
     this.readyCallbacks.forEach((callback) => callback(this));
   }

@@ -10,7 +10,7 @@ export default class FixCloud extends Entity {
 
     this.physicsBody.setDepth(7);
 
-    this.world.playSound('Bones Up');
+    this.world.playSound('Bones_Up');
 
     setTimeout(() => {
       this.kill()
