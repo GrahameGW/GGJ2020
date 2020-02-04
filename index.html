@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tux Repair</title>
+    <link rel="icon"
+      type="image/png"
+      href="./assets/images/tuxicon.png">
+
+    <style>
+      html,
+      body,
+      #game-container {
+        margin: 0px auto;
+        padding: 0;
+        width: 800px;
+        height: 600px;
+      }
+
+      #game-container > canvas {
+        border-radius: 5px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div>
+      <p>Global Game Jam: Repair. (Game will be a black screen as assets load, give it a minute).</p>
+    </div>
+    <div id="game-container"></div>
+    <div>
+      <p>Reset the dungeon for the adventurers.</p>
+      <p>Controls are arrows + space to fix an item like a skeleton or pot.</p>
+      <p>You need to have at least 3 bones to fix a skeleton.</p>
+      <p>If a hero sees you while they are in the same room or enters a room</br>
+         that hasn't been set up fully the game ends. </p>
+      <p>If three heros make it out of the dungeon without noticing you win.</p>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser.js"></script>
+    <script src="./game/src/entities/entity.js" type="module"></script>
+    <script src="./game/src/entities/player.js" type="module"></script>
+    <script src="./game/src/entities/skeleton.js" type="module"></script>
+    <script src="./game/src/entities/skeletonSpawn.js" type="module"></script>
+    <script src="./game/src/entities/bone.js" type="module"></script>
+    <script src="./game/src/entities/hero.js" type="module"></script>
+    <script src="./game/src/entities/vase.js" type="module"></script>
+    <script src="./game/src/entities/brokenVase.js" type="module"></script>
+    <script src="./game/src/entities/door.js" type="module"></script>
+    <script src="./game/src/entities/position.js" type="module"></script>
+    <script src="./game/src/entities/spikeTrap.js" type="module"></script>
+    <script src="./game/src/entities/triggeredSpikeTrap.js" type="module"></script>
+    <script src="./game/src/entities/fixCloud.js" type="module"></script>
+    <script src="./game/src/game/world.js" type="module"></script>
+    <script src="./game/src/ui/uiManager.js" type="module"></script>
+    <script src="./game/src/ui/statusBar/statusBar.js" type="module"></script>
+    <script src="./game/src/main.js" type="module"></script>
+  </body>
+</html>
