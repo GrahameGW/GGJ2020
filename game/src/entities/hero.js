@@ -17,6 +17,7 @@ export default class Hero extends Entity {
     this.physicsBody.setDepth(7);
 
     this.physicsBody.body.setVelocity(0);
+    this.leavingRoom = false;
   }
 
   sprite() {
@@ -54,8 +55,8 @@ export default class Hero extends Entity {
     }
 
     if (entity.hasTag('door') && !entity.open) {
-      entity.openDoor()
-    }
+      entity.openDoor();
+     }
 
     if (entity.hasTag('position') && entity.id == this.goalEntity.id) {
       delete this.currentRoomEntities[entity.id];
@@ -74,12 +75,6 @@ export default class Hero extends Entity {
     }
   }
 
-  roomEntities(room) {
-    return this.world.entities.filter((entity) => {
-      return entity.properties.room_id && entity.properties.room_id == room
-    });
-  }
-
   acquireNextRoom() {
     if (this.currentRoomIndex == null) {
       this.currentRoomIndex = 0;
@@ -94,8 +89,12 @@ export default class Hero extends Entity {
   }
 
   acquireNextGoal() {
+    this.leavingRoom = false
     if (this.goalEntity == null) {
       this.acquireNextRoom();
+    }
+    else if (this.goalEntity.hasTag('broken') || this.goalEntity.hasTag('spikeTrap')){
+      delete this.currentRoomEntities[this.goalEntity.id];
     }
 
     if (this.completedRoomGoals()) {
@@ -104,22 +103,26 @@ export default class Hero extends Entity {
 
     if (this.currentRoomIndex >= this.world.configuration.room_path.path.length) {
       this.kill();
-    } else {
+    } 
+    else {
       let positions = Object.values(this.currentRoomEntities).filter((entity) => entity.hasTag('position') && !entity.properties.exit)
-
+      
       if (positions.length > 0) {
         this.goalEntity = positions[0]
-      } else {
+      } 
+      else {
         let enemies = Object.values(this.currentRoomEntities).filter((entity) => entity.hasTag('enemy'))
 
         if (enemies.length > 0) {
           this.goalEntity = enemies[0]
-        } else {
+        } 
+        else {
           let entities = Object.values(this.currentRoomEntities).filter((entity) => !entity.properties.exit)
 
           if (entities.length > 0) {
             this.goalEntity = entities[0];
-          } else {
+          } 
+          else {
             let exits = Object.values(this.currentRoomEntities).filter((entity) => entity.properties.exit)
             this.goalEntity = exits[0];
           }
@@ -154,7 +157,18 @@ export default class Hero extends Entity {
     const prevVelocity = this.physicsBody.body.velocity.clone();
 
     if (this.goalEntity && this.goalEntity.hasTag('broken')) {
-      this.world.lose("A Hero Found Something That Was Still Broken.");
+      if (this.world.heroesFinished != 0) {
+        this.world.lose("A Hero Found Something That Was Still Broken.");
+      }
+      else {
+        delete this.currentRoomEntities[goalEntityBody.id];
+        this.acquireNextGoal()
+      } 
+    }
+
+    if (this.goalEntity.hasTag('spikeTrap')) {
+      delete this.currentRoomEntities[goalEntityBody.id];
+      this.acquireNextGoal()
     }
 
     if (!this.attacking) {

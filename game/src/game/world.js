@@ -92,6 +92,7 @@ export default class World {
 
     let hero = this.createEntity('hero', {type: 'hero'});
     this.addEntity(this.p3, hero, this.configuration.hero_spawn.x, this.configuration.hero_spawn.y)
+    this.p3.hero = hero;
   }
 
   loadAssets(p3) {
@@ -335,6 +336,8 @@ export default class World {
       Object.values(this.entities).forEach((entity) => entity.worldStep(p3, time, delta))
       Object.values(this.entities).filter((entity) => entity.markedForDeath).forEach((entity) => {
         this.removeEntity(entity);
+
+
       })
     }
   }

@@ -2,7 +2,7 @@ import Entity from './entity.js'
 
 export default class Skeleton extends Entity {
   init() {
-    this.speed = 100;
+    this.speed = 80;
 
     this.spawnDelay = 3000;
     this.spawnTime = 0;
@@ -14,8 +14,8 @@ export default class Skeleton extends Entity {
 
     this.tags(['skeleton', 'enemy']);
 
-    this.acquireRange = 150;
-    this.leashRange = 200;
+    this.acquireRange = 100;
+    this.leashRange = 150;
 
     this.physicsBody.setDepth(7);
   }

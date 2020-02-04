@@ -49,6 +49,7 @@ const config = {
 const game = new Phaser.Game(config);
 let cursors;
 let player;
+let hero;
 
 let world;
 
@@ -131,9 +132,11 @@ function create() {
   world.onReady((readyWorld) => {
     // UI ----------------------------------------------
     timer = readyWorld.heroTime;
-
     UI.setWorld(readyWorld);
-    hearts = UI.setHearts(this, readyWorld.player.hitPoints);
+    });
+
+
+    hearts = UI.setHearts(this, world.player.hitPoints);
     clock = UI.setTimer(this, timer);
     bones = UI.setBones(this);
 
@@ -142,22 +145,29 @@ function create() {
       callback: onEvent,
       callbackScope: this,
       loop: true,
-    });
     // END UI -------------------------------------
-
   })
 
   var camera = this.cameras.main;
-  camera.setZoom(1.25);
+  camera.setZoom(1);
+  
+  hero = Object.values(world.entities).find(e => e.hasTag('hero'));
 }
 
 function update(time, delta) {
   if (gameStarted) {
     world.update(this, time, delta);
+    if (hero.leavingRoom) {
+      hero.physicsBody.body.checkCollision.none = true;
+    }
+    else {
+      hero.physicsBody.body.checkCollision.none = false;
+    }
   }
 
   if (UI.world) {
     UI.update(hearts, clock, bones);
+    hearts.z = 100;
   }
 }
 

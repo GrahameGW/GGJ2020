@@ -48,7 +48,7 @@ export default class UIManager{
       const sprite = game.add.sprite(50 + (50 * i), 575, "pot-items")
         .setScrollFactor(0)
         .setScale(2)
-        .bringToTop(this)
+        .setDepth(70)
         .setFrame(0);
       hearts[i] = sprite;
     }
@@ -58,7 +58,7 @@ export default class UIManager{
   setTimer(game, time) {
     var text = game.add
                   .text(330, 535, this.formatTime(time), this.statusBarTextStyle)
-                  .bringToTop(this)
+                  .setDepth(70)
                   .setScrollFactor(0);
     return text;
   }

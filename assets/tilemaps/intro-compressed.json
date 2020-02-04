@@ -72,8 +72,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":878.824374903409,
-                 "y":971.807169906414
+                 "x":880.491041570076,
+                 "y":977.807169906414
                 }, 
                 {
                  "height":0,
@@ -90,8 +90,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":717.202537606251,
-                 "y":970.55047934232
+                 "x":720.202537606251,
+                 "y":944.883812675653
                 }, 
                 {
                  "height":0,
@@ -102,7 +102,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"middle"
+                         "value":"first"
                         }, 
                         {
                          "name":"type",
@@ -113,8 +113,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":723.689070018031,
-                 "y":748.437892324204
+                 "x":779.689070018031,
+                 "y":733.104558990871
                 }, 
                 {
                  "height":0,
@@ -130,7 +130,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"final"
+                         "value":"end"
                         }, 
                         {
                          "name":"type",
@@ -153,7 +153,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"final"
+                         "value":"first"
                         }, 
                         {
                          "name":"type",
@@ -164,8 +164,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":593.71960242981,
-                 "y":748.338962900318
+                 "x":539.052935763143,
+                 "y":747.672296233651
                 }, 
                 {
                  "height":0,
@@ -188,7 +188,7 @@
                  "visible":true,
                  "width":0,
                  "x":719.900255473513,
-                 "y":909.962301871727
+                 "y":910.962301871727
                 }, 
                 {
                  "height":0,
@@ -210,7 +210,7 @@
                  "type":"config",
                  "visible":true,
                  "width":0,
-                 "x":652.547806087405,
+                 "x":656.547806087405,
                  "y":1006.99933827595
                 }, 
                 {
@@ -234,7 +234,7 @@
                  "visible":true,
                  "width":0,
                  "x":656.843783334764,
-                 "y":459.329338275951
+                 "y":464.329338275951
                 }, 
                 {
                  "height":0,
@@ -257,7 +257,7 @@
                  "visible":true,
                  "width":0,
                  "x":655.744787885292,
-                 "y":844.626324624367
+                 "y":848.626324624367
                 }, 
                 {
                  "height":0,
@@ -273,7 +273,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"middle"
+                         "value":"first"
                         }, 
                         {
                          "name":"type",
@@ -285,7 +285,7 @@
                  "visible":true,
                  "width":0,
                  "x":656.421783334764,
-                 "y":812.145642045162
+                 "y":788.145642045162
                 }, 
                 {
                  "height":0,
@@ -296,7 +296,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"final"
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -307,8 +307,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":654.89279243582,
-                 "y":620.701909410149
+                 "x":655.059459102487,
+                 "y":603.535242743483
                 }, 
                 {
                  "height":0,
@@ -330,8 +330,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":653.546796986349,
-                 "y":651.914725070834
+                 "x":655.546796986349,
+                 "y":656.914725070834
                 }, 
                 {
                  "height":0,
@@ -354,30 +354,7 @@
                  "visible":true,
                  "width":0,
                  "x":656.843783334764,
-                 "y":373.220297321199
-                }, 
-                {
-                 "height":0,
-                 "id":317,
-                 "name":"Vase",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"room_id",
-                         "type":"string",
-                         "value":"final"
-                        }, 
-                        {
-                         "name":"type",
-                         "type":"string",
-                         "value":"vase"
-                        }],
-                 "rotation":0,
-                 "type":"entity",
-                 "visible":true,
-                 "width":0,
-                 "x":454.325824289517,
-                 "y":194.208097097965
+                 "y":368.220297321199
                 }, 
                 {
                  "height":0,
@@ -399,8 +376,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":782.642528505195,
-                 "y":910.032301871727
+                 "x":784.642528505195,
+                 "y":911.032301871727
                 }, 
                 {
                  "height":0,
@@ -411,7 +388,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"middle"
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -422,31 +399,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":782.312928951661,
-                 "y":525.789310972783
-                }, 
-                {
-                 "height":0,
-                 "id":320,
-                 "name":"Vase",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"room_id",
-                         "type":"string",
-                         "value":"final"
-                        }, 
-                        {
-                         "name":"type",
-                         "type":"string",
-                         "value":"vase"
-                        }],
-                 "rotation":0,
-                 "type":"entity",
-                 "visible":true,
-                 "width":0,
-                 "x":518.441824289517,
-                 "y":194.208097097965
+                 "x":526.979595618328,
+                 "y":591.122644306116
                 }, 
                 {
                  "height":0,
@@ -462,7 +416,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":""
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -473,8 +427,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":626.145378337769,
-                 "y":528.257986769125
+                 "x":495.645378337769,
+                 "y":496.757986769125
                 }, 
                 {
                  "height":0,
@@ -485,12 +439,12 @@
                         {
                          "name":"baseHeroTimer",
                          "type":"int",
-                         "value":45
+                         "value":35
                         }, 
                         {
                          "name":"heroTimerDecrease",
                          "type":"int",
-                         "value":5
+                         "value":10
                         }, 
                         {
                          "name":"key",
@@ -523,7 +477,7 @@
                         {
                          "name":"path",
                          "type":"string",
-                         "value":"[\"entry\",\"middle\",\"final\"]"
+                         "value":"[\"entry\",\"first\",\"second\",\"end\"]"
                         }],
                  "rotation":0,
                  "type":"config",
@@ -535,12 +489,12 @@
                 {
                  "height":157.714404996995,
                  "id":324,
-                 "name":"",
+                 "name":"first",
                  "properties":[
                         {
                          "name":"name",
                          "type":"string",
-                         "value":"middle"
+                         "value":"first"
                         }],
                  "rotation":0,
                  "type":"room",
@@ -552,7 +506,7 @@
                 {
                  "height":160.799981797888,
                  "id":325,
-                 "name":"",
+                 "name":"entry",
                  "properties":[
                         {
                          "name":"name",
@@ -569,12 +523,12 @@
                 {
                  "height":158.615409547523,
                  "id":326,
-                 "name":"",
+                 "name":"second",
                  "properties":[
                         {
                          "name":"name",
                          "type":"string",
-                         "value":"final"
+                         "value":"second"
                         }],
                  "rotation":0,
                  "type":"room",
@@ -586,12 +540,12 @@
                 {
                  "height":97.2692457285138,
                  "id":327,
-                 "name":"",
+                 "name":"end",
                  "properties":[
                         {
                          "name":"name",
                          "type":"string",
-                         "value":"final"
+                         "value":"end"
                         }],
                  "rotation":0,
                  "type":"room",
@@ -643,7 +597,7 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":842.929509744999,
+                 "x":847.929509744999,
                  "y":945.621018287971
                 }, 
                 {
@@ -689,8 +643,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":846.226496093415,
-                 "y":751.098823731433
+                 "x":848.226496093415,
+                 "y":753.098823731433
                 }, 
                 {
                  "height":0,
@@ -740,29 +694,6 @@
                 }, 
                 {
                  "height":0,
-                 "id":334,
-                 "name":"Vase",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"room_id",
-                         "type":"string",
-                         "value":"entry"
-                        }, 
-                        {
-                         "name":"type",
-                         "type":"string",
-                         "value":"vase"
-                        }],
-                 "rotation":0,
-                 "type":"entity",
-                 "visible":true,
-                 "width":0,
-                 "x":656.100283334764,
-                 "y":911.55215935434
-                }, 
-                {
-                 "height":0,
                  "id":335,
                  "name":"Vase",
                  "point":true,
@@ -775,13 +706,13 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"vase"
+                         "value":"brokenVase"
                         }],
                  "rotation":0,
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":594.556538164334,
+                 "x":592.556538164334,
                  "y":911.55215935434
                 }, 
                 {
@@ -798,14 +729,14 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"vase"
+                         "value":"brokenVase"
                         }],
                  "rotation":0,
                  "type":"entity",
                  "visible":true,
                  "width":0,
                  "x":527.517815746544,
-                 "y":909.354168455396
+                 "y":911.354168455396
                 }, 
                 {
                  "height":0,
@@ -816,7 +747,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"middle"
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -827,8 +758,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":782.484760024041,
-                 "y":589.546492659054
+                 "x":527.984760024041,
+                 "y":528.379825992387
                 }, 
                 {
                  "height":0,
@@ -839,7 +770,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"middle"
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -850,8 +781,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":529.715806645488,
-                 "y":522.507770241264
+                 "x":783.215806645488,
+                 "y":528.174436907931
                 }, 
                 {
                  "height":0,
@@ -862,7 +793,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"middle"
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -873,8 +804,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":528.616811196016,
-                 "y":588.447497209582
+                 "x":783.616811196016,
+                 "y":592.114163876249
                 }, 
                 {
                  "height":0,
@@ -890,7 +821,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":""
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -901,8 +832,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":655.001287885292,
-                 "y":525.80475658968
+                 "x":783.501287885292,
+                 "y":495.80475658968
                 }, 
                 {
                  "height":0,
@@ -918,7 +849,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":""
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -929,8 +860,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":685.773160470507,
-                 "y":557.675624624367
+                 "x":816.273160470507,
+                 "y":527.675624624367
                 }, 
                 {
                  "height":0,
@@ -946,7 +877,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":""
+                         "value":"second"
                         }, 
                         {
                          "name":"type",
@@ -957,8 +888,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":689.070146818923,
-                 "y":587.34850176011
+                 "x":687.570146818923,
+                 "y":624.34850176011
                 }, 
                 {
                  "height":0,
@@ -969,7 +900,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"final"
+                         "value":"end"
                         }, 
                         {
                          "name":"type",
@@ -980,8 +911,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":657.199278784236,
-                 "y":332.381557482614
+                 "x":656.199278784236,
+                 "y":302.881557482614
                 }, 
                 {
                  "height":0,
@@ -992,7 +923,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"middle"
+                         "value":"end"
                         }, 
                         {
                          "name":"type",
@@ -1003,8 +934,8 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":607.744483557998,
-                 "y":296.114707650039
+                 "x":752.744483557998,
+                 "y":271.614707650039
                 }, 
                 {
                  "height":0,
@@ -1015,7 +946,7 @@
                         {
                          "name":"room_id",
                          "type":"string",
-                         "value":"final"
+                         "value":"first"
                         }, 
                         {
                          "name":"type",
@@ -1049,8 +980,563 @@
                  "type":"entity",
                  "visible":true,
                  "width":0,
-                 "x":464.875075126642,
+                 "x":463.875075126642,
                  "y":752.197819180905
+                }, 
+                {
+                 "height":0,
+                 "id":348,
+                 "name":"Vase",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"entry"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"brokenVase"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":656.333333333333,
+                 "y":912.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":349,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":720,
+                 "y":624.5
+                }, 
+                {
+                 "height":0,
+                 "id":350,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":751.5,
+                 "y":624
+                }, 
+                {
+                 "height":0,
+                 "id":352,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":591,
+                 "y":575.5
+                }, 
+                {
+                 "height":0,
+                 "id":353,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":624,
+                 "y":575.5
+                }, 
+                {
+                 "height":0,
+                 "id":354,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":655,
+                 "y":575.5
+                }, 
+                {
+                 "height":0,
+                 "id":355,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":688,
+                 "y":575.5
+                }, 
+                {
+                 "height":0,
+                 "id":360,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":528,
+                 "y":497
+                }, 
+                {
+                 "height":0,
+                 "id":361,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":561,
+                 "y":497
+                }, 
+                {
+                 "height":0,
+                 "id":362,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":592,
+                 "y":497
+                }, 
+                {
+                 "height":0,
+                 "id":363,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":625,
+                 "y":497
+                }, 
+                {
+                 "height":0,
+                 "id":368,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":495.5,
+                 "y":1009
+                }, 
+                {
+                 "height":0,
+                 "id":369,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":528.5,
+                 "y":1009
+                }, 
+                {
+                 "height":0,
+                 "id":370,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":559.5,
+                 "y":1009
+                }, 
+                {
+                 "height":0,
+                 "id":371,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":592.5,
+                 "y":1009
+                }, 
+                {
+                 "height":0,
+                 "id":372,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":719,
+                 "y":1009
+                }, 
+                {
+                 "height":0,
+                 "id":373,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":752,
+                 "y":1009
+                }, 
+                {
+                 "height":0,
+                 "id":374,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":783,
+                 "y":1009
+                }, 
+                {
+                 "height":0,
+                 "id":375,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":816,
+                 "y":1009
+                }, 
+                {
+                 "height":0,
+                 "id":376,
+                 "name":"SpikeTrap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"overlapOnly",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"room_id",
+                         "type":"string",
+                         "value":"second"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"spikeTrap"
+                        }],
+                 "rotation":0,
+                 "type":"entity",
+                 "visible":true,
+                 "width":0,
+                 "x":815.5,
+                 "y":593
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1059,7 +1545,7 @@
          "y":0
         }],
  "nextlayerid":5,
- "nextobjectid":347,
+ "nextobjectid":377,
  "orientation":"orthogonal",
  "properties":[
         {
