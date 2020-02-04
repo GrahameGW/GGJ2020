@@ -28,6 +28,7 @@ export default class Player extends Entity {
 
   static animations(anims) {
     return [];
+    /*
     return [
       {
         key: "Tux_Hat-up",
@@ -75,6 +76,7 @@ export default class Player extends Entity {
         repeat: -1
       }
     ]
+    */
   }
 
   collidedWith(p3, entity) {

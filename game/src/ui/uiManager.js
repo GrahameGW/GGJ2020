@@ -1,9 +1,7 @@
-import StatusBar from "./statusBar/statusBar.js"
 var world;
 var time;
 export default class UIManager{
   constructor(game, world) {
-    this.statusBar = new StatusBar();
     this.statusBarTextStyle  = {
       fontFamily: 'Courier',
       fontSize: '28px',
@@ -36,12 +34,12 @@ export default class UIManager{
   }
 
   loadSpriteSheets(game) {
-    game.load.spritesheet('pot-items', '/assets/images/Pot Items.png', {
+    game.load.spritesheet('pot-items', '../../../assets/images/Pot Items.png', {
       frameWidth: 16,
       frameHeight: 16,
       }
     );
-    game.load.image('bone', '/assets/images/Bone.png');
+    game.load.image('bone', '../../../assets/images/Bone.png');
   }
 
   setHearts(game, hitPoints) {
@@ -50,18 +48,17 @@ export default class UIManager{
       const sprite = game.add.sprite(50 + (50 * i), 575, "pot-items")
         .setScrollFactor(0)
         .setScale(2)
-        .setDepth(500)
+        .bringToTop(this)
         .setFrame(0);
       hearts[i] = sprite;
     }
-
     return hearts;
   }
 
   setTimer(game, time) {
     var text = game.add
                   .text(330, 535, this.formatTime(time), this.statusBarTextStyle)
-                  .setDepth(500)
+                  .bringToTop(this)
                   .setScrollFactor(0);
     return text;
   }
@@ -69,12 +66,12 @@ export default class UIManager{
   setBones(game) {
     var text = game.add
                   .text(700, 560, "0x", this.statusBarTextStyle)
-                  .setDepth(500)
+                  .setDepth(70)
                   .setScrollFactor(0);
     game.add.image(755, 575, 'bone')
             .setScrollFactor(0)
             .setScale(1.6)
-            .setDepth(500);
+            .setDepth(70);
     return text;
   }
 
@@ -87,6 +84,7 @@ export default class UIManager{
       // Adds left zeros to seconds
       partInSeconds = partInSeconds.toString().padStart(2,'0');
       // Returns formated time
+      console.log(`Next Hero:\n${minutes}:${partInSeconds}`);
       return `Next Hero:\n${minutes}:${partInSeconds}`;
     } else {
       return 'Next Hero:\n00:00';
