@@ -113,9 +113,9 @@ export default class World {
 
     let sounds = [
       'Attack',
-      'Trap 3',
-      'Bones Down',
-      'Bones Up'
+      'Trap_3',
+      'Bones_Down',
+      'Bones_Up'
     ];
 
     sounds.forEach((sound) => {
@@ -124,9 +124,9 @@ export default class World {
     });
 
     let music = [
-      'Music TR 3',
-      'Defeat Music',
-      'Victory Music 4'
+      'Music_TR_3',
+      'Defeat_Music',
+      'Victory_Music_4'
     ]
 
     music.forEach((track) => {
