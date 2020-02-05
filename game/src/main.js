@@ -7,6 +7,7 @@ import UIManager from './ui/uiManager.js';
 var hearts = [];
 var timer;
 var bones;
+var root = "/"
 
 import World from './game/world.js'
 import Player from './entities/player.js'
@@ -73,13 +74,6 @@ function preload() {
   });
 
   world.loadAssets(this);
-
-  this.load.scenePlugin({
-    key: 'rexuiplugin',
-    url: '/game/js/rexuiplugin.min.js',
-    sceneKey: 'rexUI'
-  });
-
   UI.loadSpriteSheets(this);
 }
 

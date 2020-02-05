@@ -34,7 +34,7 @@ export default class UIManager{
   }
 
   loadSpriteSheets(game) {
-    game.load.spritesheet('pot-items', '../../../assets/images/Pot Items.png', {
+    game.load.spritesheet('pot-items', '../../../assets/images/Pot_Items.png', {
       frameWidth: 16,
       frameHeight: 16,
       }

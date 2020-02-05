@@ -95,9 +95,9 @@ export default class World {
     this.p3.hero = hero;
   }
 
-  loadAssets(p3) {
-    p3.load.image("tiles", "../../../assets/tilesets/32_dungeon_tiles.png");
-    p3.load.tilemapTiledJSON("map", "../../../assets/tilemaps/intro-compressed.json");
+  loadAssets(p3, root) {
+    p3.load.image("tiles", "https://grahamewatt.com/games/tux-repair/assets/tilesets/32_dungeon_tiles.png");
+    p3.load.tilemapTiledJSON("map", "https://grahamewatt.com/games/tux-repair/assets/tilemaps/intro-compressed.json");
 
     // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
     // the player animations (walking left, walking right, etc.) in one image. For more info see:
@@ -107,8 +107,8 @@ export default class World {
     //p3.load.multiatlas("atlas", "../assets/atlas/full_atlas.json", "../assets/atlas/sprites",);
     p3.load.atlas({
       key: 'atlas',
-      textureURL: '../../../assets/atlas/full_atlas.png',
-      atlasURL: '../../../assets/atlas/full_atlas.json'
+      textureURL: 'https://grahamewatt.com/games/tux-repair/assets/atlas/full_atlas.png',
+      atlasURL: 'https://grahamewatt.com/games/tux-repair/assets/atlas/full_atlas.json'
     });
 
     let sounds = [
@@ -119,9 +119,9 @@ export default class World {
     ];
 
     sounds.forEach((sound) => {
-      p3.load.audio(sound, '../../../assets/sounds/effects/'+sound+'.mp3');
-      this.sounds[sound] = null;
-    });
+      p3.load.audio(sound, 'https://grahamewatt.com/games/tux-repair/assets/sounds/effects/' + sound + '.mp3');
+      this.sounds[sound] = null
+    })
 
     let music = [
       'Music_TR_3',
@@ -130,7 +130,7 @@ export default class World {
     ]
 
     music.forEach((track) => {
-      p3.load.audio(track, '../../../assets/sounds/music/'+ track +'.mp3');
+      p3.load.audio(track, 'https://grahamewatt.com/games/tux-repair/assets/sounds/music/'+ track +'.mp3');
       this.music[track] = null;
     });
   }
