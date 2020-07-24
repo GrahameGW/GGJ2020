@@ -3,3 +3,5 @@ A 2D dungeon crawler created as an entry to the 2020 Global Game Jam. Play as Ce
 Built with Phaser3. 
 
 For a full devlog, visit https://grahamewatt.com/build-a-video-game-in-48-hours-global-game-jam-2020/
+
+Playable build at https://grahamewatt.com/games/tux-repair
