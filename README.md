@@ -4,4 +4,9 @@ Built with Phaser3.
 
 For a full devlog, visit https://grahamewatt.com/build-a-video-game-in-48-hours-global-game-jam-2020/
 
-Playable build at https://grahamewatt.com/games/tux-repair
+GGJ Entry page at https://globalgamejam.org/2020/games/tux-repair-dungeon-cleanup-2
+
+Playable builds at:
+* https://grahamewatt.com/games/tux-repair
+* https://rdgoetz.github.io/GGJ2020/game/
+
