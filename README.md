@@ -1,6 +1,6 @@
 A 2D dungeon crawler created as an entry to the 2020 Global Game Jam. Play as Cecil, the penguin janitor tasked with cleaning and resetting the dungeon after the destruction caused by the latest hero’s attempt to clear the level. Be careful–the traps and monsters are just as deadly to you as they are to the heroes!
 
-My first game. I was responsible for some level design and UI programming.
+My first game. I was responsible for some level design and UI programming, and dealt with some basic project management/dev ops infrastructure for a team of 4.
 
 Built with Phaser3, with Tiled for creating tilemaps.
 
